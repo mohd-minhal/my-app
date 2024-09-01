@@ -1,6 +1,6 @@
 import "./respo.css"
-import { projects } from "../../Static/data.js"
-import { Window } from "../window/window.js"
+import { projects } from "../../Static/data"
+import { Window } from "../window/window"
 import Draggable from 'react-draggable';
 import { useState } from "react"
 
