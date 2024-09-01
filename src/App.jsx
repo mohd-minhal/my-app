@@ -1,4 +1,3 @@
-import "./App.css";
 import Contact from "./Pages/contact";
 import Home from "./Pages/home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
