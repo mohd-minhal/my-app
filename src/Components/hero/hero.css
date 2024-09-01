@@ -1,0 +1,25 @@
+.hero {
+  margin: 0;
+  padding: 4rem 15rem;
+  color: #b3d7e0;
+  background-color: #303030;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.1;
+  }
+}
+
+.line {
+  margin-left: 35px;
+  border-left: 1px solid #b3d7e0;
+  height: 300px;
+  cursor: pointer;
+  animation: blinker 3s linear infinite;
+}
+
+.scroll {
+  margin: 0;
+  font-weight: 100;
+}
