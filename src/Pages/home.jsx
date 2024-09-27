@@ -1,7 +1,7 @@
 import About from "../Components/about";
 import NavBar from "../Components/navbar";
 import Hero from "../Components/hero";
-import Projects from "../Components/respo/respo"
+import Projects from "../Components/respo"
 
 export default function Home() {
   return (
