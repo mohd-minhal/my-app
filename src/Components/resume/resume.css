@@ -1,9 +1,0 @@
-.resume {
-  position: fixed;
-  top: 0%;
-  right: -50%;
-  height: 100dvh;
-  width: 33dvw;
-  z-index: 9999;
-  transition: right 1s ease;
-}
