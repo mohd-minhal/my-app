@@ -6,8 +6,8 @@ export function Window(value) {
   const project = projects.find((project) => project.id === id);
 
   return (
-    <>
-      <div className="border-4 border-gray-200 rounded-t-md w-[30rem]">
+    <div className="max-w-[30rem] mx-auto mb-4">
+      <div className="border-5 border-gray-200 rounded-t-md">
         <div className="flex items-center p-2 bg-gray-200 rounded-t-md">
           <div className="flex space-x-2">
             <span className="dot bg-red-500 h-3 w-3 rounded-full"></span>
@@ -35,14 +35,23 @@ export function Window(value) {
 
         <div className="p-2 bg-blue-100">
           <p>{project.description}</p>
-          <h4>{project.topics.slice(0, 4).join(", ")}</h4>
+          <div className="flex flex-wrap gap-2 mt-2">
+            {project.topics.slice(0, 4).map((topic, index) => (
+              <span
+                key={index}
+                className="bg-white text-gray-800 rounded-full px-3 py-1 text-sm"
+              >
+                {topic}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
 const handleClick = (event) => {
-  const htmlUrl = event.currentTarget.getAttribute('data-url');
+  const htmlUrl = event.currentTarget.getAttribute("data-url");
   window.open(htmlUrl, "_blank");
 };

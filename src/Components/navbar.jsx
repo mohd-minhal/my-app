@@ -36,6 +36,8 @@ export default function NavBar() {
               <a
                 className="flex items-center text-lg font-semibold transition-all duration-200"
                 href={value.link}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <UnderlineHover>
                   {/* Display icons on small screens and names on large screens */}
