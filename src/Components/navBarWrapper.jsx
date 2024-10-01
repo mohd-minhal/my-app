@@ -37,7 +37,7 @@ const NavBarWrapper = () => {
   return (
     <>
       <div
-        className={`fixed left-0 z-[1000] backdrop-opacity-60 transition-all duration-300 ease-in-out p-5 mx-auto ${
+        className={`fixed left-0 z-[1000] backdrop-opacity-60 transition-all duration-300 ease-in-out mx-auto ${
           showNavBar ? "" : ""
         } hidden sm:block`}
         style={{
@@ -49,7 +49,7 @@ const NavBarWrapper = () => {
       </div>
       <div
         className={`fixed left-0 z-[1000] backdrop-opacity-60 transition-all duration-300 ease-in-out p-5 mx-auto ${
-          showNavBar ? "translate-y-0" : "-translate-y-[150%]"
+          showNavBar ? "translate-y-0" : "-translate-y-[200%]"
         } block sm:hidden`}
         style={{
           width: "100%",

@@ -5,6 +5,9 @@ export const content = [
 ];
 export const theme = {
   extend: {
+    fontFamily: {
+      fredoka: ['Fredoka', 'sans-serif'],
+    },
     animation: {
       blinker: 'blinker 3s linear infinite',
     },

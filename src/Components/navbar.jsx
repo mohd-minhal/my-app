@@ -7,18 +7,18 @@ export default function NavBar() {
     {
       name: "LinkedIn",
       link: "https://www.linkedin.com/",
-      svg: "src/Static/linkedin.png",
+      svg: "src/Static/linkedin.svg",
     },
     {
       name: "Instagram",
       link: "https://www.instagram.com/",
-      svg: "src/Static/insta.png",
+      svg: "src/Static/instagram.svg",
     },
-    { name: "Contact", link: "Contact", svg: "src/Static/contact.png" },
+    { name: "Contact", link: "Contact", svg: "src/Static/ask.svg" },
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full backdrop-blur-lg z-[1000] shadow flex flex-col sm:flex-row justify-between items-center py-4 px-8 sm:px-12">
+    <nav className="fixed top-0 left-0 w-full backdrop-blur-lg z-[1000] shadow flex flex-col sm:flex-row justify-between items-center py-4 px-8">
       <div className="flex flex-wrap justify-between items-center w-full">
         {/* Navigation items (John Doe, India) */}
         <ul className="flex space-x-8 items-center">
@@ -40,17 +40,11 @@ export default function NavBar() {
                 rel="noopener noreferrer"
               >
                 <UnderlineHover>
-                  {/* Display icons on small screens and names on large screens */}
-                  <span className="block sm:hidden">
-                    <img
-                      src={value.svg}
-                      alt={value.name}
-                      className="inline h-8"
-                    />
-                  </span>
-                  <span className="hidden sm:block">
-                    {value.name.toUpperCase()}
-                  </span>
+                  <img
+                    src={value.svg}
+                    alt={value.name}
+                    className="inline h-12 transition duration-300 hover:filter hover:invert-[0.5] hover:sepia hover:saturate-[5] hover:hue-rotate-[175deg]"
+                  />
                 </UnderlineHover>
               </a>
             </li>

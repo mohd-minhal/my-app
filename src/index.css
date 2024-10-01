@@ -2,9 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Fredoka One';
-  src: url('https://assets.codepen.io/4175254/fredoka-one.ttf') format('truetype');
+@layer utilities {
+  .font-fredoka-300 {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 300;
+  }
+
+  .font-fredoka-400 {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+  }
+
+  .font-fredoka-500 {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+  }
+
+  .font-fredoka-600 {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+  }
+
+  .font-fredoka-700 {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+  }
 }
 
 body {
