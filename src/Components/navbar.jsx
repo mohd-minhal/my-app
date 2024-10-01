@@ -18,7 +18,7 @@ export default function NavBar() {
   ];
 
   return (
-    <nav className="flex flex-col sm:flex-row justify-between items-center py-4 px-8 sm:px-12">
+    <nav className="fixed top-0 left-0 w-full backdrop-blur-lg z-[1000] shadow flex flex-col sm:flex-row justify-between items-center py-4 px-8 sm:px-12">
       <div className="flex flex-wrap justify-between items-center w-full">
         {/* Navigation items (John Doe, India) */}
         <ul className="flex space-x-8 items-center">

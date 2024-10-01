@@ -10,9 +10,9 @@ function Projects() {
         {projects.map(
           (project, index) =>
             project.description && (
-              <Draggable>
+              <Draggable key={index}>
                 <div className="break-inside-avoid mb-10 cursor-move" key={index}>
-                  <Window value={project.id} />
+                  <Window value={project.id}/>
                 </div>
               </Draggable>
             )

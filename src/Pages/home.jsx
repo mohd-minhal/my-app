@@ -1,13 +1,13 @@
 import About from "../Components/about";
-import NavBar from "../Components/navbar";
 import Hero from "../Components/hero";
 import Respository from "../Components/respo";
 import Projects from "../Components/project";
+import NavBarWrapper from "../Components/navBarWrapper";
 
 export default function Home() {
   return (
     <>
-      <NavBar />
+      <NavBarWrapper />
       <Hero />
       <About />
       <Projects />
