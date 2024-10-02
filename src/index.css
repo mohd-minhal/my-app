@@ -34,5 +34,10 @@ body {
   font-family: "Fredoka One", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #00a699;
+  background-color: #e7e4df;
+}
+
+::selection {
+  background-color: #f6c4dd;
+  color: black;
 }

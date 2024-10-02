@@ -10,7 +10,19 @@ const NavBarWrapper = () => {
   const handleScroll = () => {
     const scrollY = window.scrollY;
     const viewportHeight = window.innerHeight;
-    const newWidth = Math.max(25, 100 - scrollY / 5);
+
+    // Adjusting the width based on viewport size
+    const viewportWidth = window.innerWidth;
+    let newWidth;
+
+    if (viewportWidth >= 1024) { // Large screens (1024px and above)
+      newWidth = Math.max(25, 100 - scrollY / 5); // Minimum width 25%
+    } else if (viewportWidth >= 640) { // Medium screens (640px to 1023px)
+      newWidth = Math.max(40, 100 - scrollY / 5); // Minimum width 40%
+    } else {
+      newWidth = "100%"; // For small screens
+    }
+
     const newTop = Math.min(scrollY, viewportHeight - 150);
 
     console.log(newTop, newWidth);
@@ -37,7 +49,7 @@ const NavBarWrapper = () => {
   return (
     <>
       <div
-        className={`fixed left-0 z-[1000] backdrop-opacity-60 transition-all duration-300 ease-in-out mx-auto ${
+        className={`fixed left-0 z-[1000] backdrop-opacity-0 transition-all duration-300 ease-in-out mx-auto ${
           showNavBar ? "" : ""
         } hidden sm:block`}
         style={{
@@ -48,7 +60,7 @@ const NavBarWrapper = () => {
         <NavBar />
       </div>
       <div
-        className={`fixed left-0 z-[1000] backdrop-opacity-60 transition-all duration-300 ease-in-out p-5 mx-auto ${
+        className={`fixed left-0 z-[1000] transition-all duration-300 ease-in-out p-5 mx-auto ${
           showNavBar ? "translate-y-0" : "-translate-y-[200%]"
         } block sm:hidden`}
         style={{

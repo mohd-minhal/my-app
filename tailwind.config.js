@@ -10,10 +10,15 @@ export const theme = {
     },
     animation: {
       blinker: 'blinker 3s linear infinite',
+      rotate: 'rotate 10s linear infinite',
     },
     keyframes: {
       blinker: {
         '50%': { opacity: '0.1' },
+      },
+      rotate: {
+        '0%': { transform: 'rotate(360deg)' },
+        '100%': { transform: 'rotate(0deg)' },
       },
     },
   },

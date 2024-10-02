@@ -1,12 +1,25 @@
+import UnderlineHover from "./underline";
+
 export default function Hero() {
   return (
-    <div className="flex flex-col items-start justify-center h-screen px-6 md:px-16 text-white bg-gradient-to-r from-[#002541] to-[#003d5b]">
-      <small>&lt;&gt;Hello World&lt;/&gt;</small>
-      <h1 className="font-bold text-5xl mb-6">I'm [Your Name]</h1>
-      <h2 className="text-3xl animate-blinker mb-6">Software Developer</h2>
-      <h3 className="text-xl mb-8">Specializing in Java Backend and React</h3>
-      <div className="flex flex-col border-l border-[#b3d7e0] pl-4 space-y-4 cursor-pointer">
-      </div>
+    <div className="flex flex-col justify-center h-screen px-6 md:px-16">
+      <h1 className="text-2xl font-fredoka-300 m-4 transition-all duration-300 md:text-5xl sm:text-3xl">
+        <span> Developer Specializing in </span>
+        <span> Interactive Experiences </span>
+        <span> Available for Freelance </span>
+        <br></br>
+        <span> Say </span>
+        <span>
+          <UnderlineHover>
+            <a
+              href="mailto:hello@pauloferreirajorge.com"
+              className="text-primary hover:underline"
+            >
+              hello@johndoeindia.com
+            </a>
+          </UnderlineHover>
+        </span>
+      </h1>
     </div>
   );
 }
