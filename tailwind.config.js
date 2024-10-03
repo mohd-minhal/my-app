@@ -10,7 +10,7 @@ export const theme = {
     },
     animation: {
       blinker: 'blinker 3s linear infinite',
-      rotate: 'rotate 10s linear infinite',
+      rotate: 'rotate 20s linear infinite',
     },
     keyframes: {
       blinker: {

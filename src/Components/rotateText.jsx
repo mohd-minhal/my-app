@@ -1,23 +1,13 @@
-import React, { useEffect, useState } from "react";
-
 const RotatingTextCircle = () => {
-  const [size, setSize] = useState(Math.min(window.innerWidth, 700));
-
-  useEffect(() => {
-    const handleResize = () => {
-      setSize(Math.min(window.innerWidth, 700));
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const size = Math.min(window.innerWidth, 500);
 
   return (
     <div
-      className="fixed left-0 bottom-0 m-4"
-      style={{ transform: "translate(-35%, 50%)", pointerEvents: "none" }}
+      className="fixed right-0 bottom-0"
+      style={{
+        transform: "translate(40%, 40%)",
+          pointerEvents: "none", // Invisible to mouse events
+      }}
     >
       <div
         className="relative"
